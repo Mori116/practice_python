@@ -62,9 +62,41 @@ uppered_text = text.upper()
 print(uppered_text)
 # upper()メソッドで文字列を大文字へ変換する
 
+text = "LOWER LETTERS"
+lower_text = text.lower()
+print(lower_text)
+# lower()メソッドで文字列を小文字へ変換する
+
 text = "The shells she sells are sea-shells, I'm sure."
 find_text = text.find("sea")
 print(find_text)
-# 結果：25（25番目の文字がseaであるの意。※先頭の文字を０から数える。）
+# 結果：25（25番目の文字がseaであるの意。※先頭の文字を０から数える）
 
 
+data = 0.5
+data_integer = data.as_integer_ratio()
+print(data_integer)
+# 実数を分数のように2つの整数の比で表す
+
+
+# 比較演算子
+true = 100 > 10
+print(true)
+
+false = 10 > 100
+print(false)
+
+
+# 文字列の比較
+# 数字は、文字の0が最小、9が最大(0 < 1 < 2 < ... < 9)
+# アルファベットでは、a が最小、z が最大 (a < b < c < ... < z)
+# 大文字は小文字より小さい (A < a, B < b, ...)
+# 数字は、アルファベットよりも小さい (0 < 9 < A)
+number = '123' < '456'
+print(number)
+
+lang = 'python' < 'Python'
+print(lang)
+
+lang_1 = 'Python-1' < 'Python-a'
+print(lang_1)
